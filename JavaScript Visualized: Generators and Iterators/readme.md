@@ -1,4 +1,13 @@
-# Comparison
+# How to execute
+
+```
+node with-generator.js
+node without-generator.js
+```
+
+And you'll get the result stats
+
+# Stats comparison
 
 ```
 with generator
@@ -21,3 +30,7 @@ without generator
 ```
 
 If we took the `heapTotal` metric, there is an improvement of 78%: (220.39 - 47.44) / 220.39 = ~0.78
+
+### Bibliography
+
+* https://dev.to/lydiahallie/javascript-visualized-generators-and-iterators-e36
