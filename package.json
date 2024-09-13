@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sc": "mkdir \"$F\" && touch \"$F\"/readme.md && echo \"### Bibliography\n\n* $U\" >> \"$F\"/readme.md"
   },
   "author": "",
   "license": "ISC",
