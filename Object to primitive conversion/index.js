@@ -16,15 +16,26 @@ function Lannister(name) {
     }
 }
 
-const ned = new Stark('Ned')
+class Tully {
+    constructor(name) {
+        this.name = name
+    }
+
+    toString() {
+        return `I am ${this.name} of Tullys house.`
+    }
+}
+
+const ned   = new Stark('Ned')
 const tywin = new Lannister('Tywin')
+const sam   = new Tully('Sam')
 
 console.log("" + ned)
 console.log("" + tywin)
+console.log("" + sam)
 
 // Here is demonstration of how to convert an object to a primitive
-
-// instead of printing '[object Object]'
-// we get 'Ned of Starks house'
-// and below 'I am Tywin of Lannisters house.'
-
+// instead of printing '[object Object]' we wll get
+// 'I am Ned of Starks house.'
+// 'I am Tywin of Lannisters house.'
+// 'I am Sam of Tullys house.'
