@@ -28,6 +28,8 @@ class MathArray extends Array {
     toArray() {
         return [...this]
     }
+
+    [Symbol.toStringTag] = 'MathArray'
 }
 
 let numbers = new MathArray(1, 2, 3, 4, 5);
@@ -41,5 +43,9 @@ console.log(numbers.toArray())
 console.log(numbers.empty())
 console.log(new MathArray().empty())
 
+console.log(numbers instanceof Array)
 
-console.log(MathArray.constructor === Array)
+let s = Object.prototype.toString;
+
+console.log(s.call(numbers)) //                    normally will print: [object Array]
+                             // but now with toStringTag it will print: [object MathArray]
