@@ -7,7 +7,13 @@
 * [Object to primitive conversion](./Object%20to%20primitive%20conversion/readme.md)
 * [Extending built-in classes](./Extending%20built-in%20classes/readme.md)
 
+### TODO laboratory
+
+* [ ] [WeakMap/WeakSet and the mark-and-sweep algorithm](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_management#weakmaps_and_weaksets)
+* [ ] [Event loop and queue micro task](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide)
+
 ### Bibliography
 
 * https://roadmap.sh/javascript
 * https://dev.to/lydiahallie/series/3341
+* https://github.com/mdn/js-examples/tree/main/module-examples
