@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "sc": "mkdir \"$F\" && touch \"$F\"/readme.md && echo \"### Bibliography\n\n* $U\" >> \"$F\"/readme.md"
+    "sc": "mkdir \"$F\" && touch \"$F\"/readme.md && echo \"# How to execute\n\n### Bibliography\n\n* $U\" >> \"$F\"/readme.md"
   },
   "author": "",
   "license": "ISC",

@@ -1,0 +1,6 @@
+{
+  "name": "inspire",
+  "type": "module",
+  "version": "0.0.0",
+  "bin": "./index.js"
+}
