@@ -1,16 +1,35 @@
 import http from 'http'
+import fs from 'fs/promises'
+import url from 'url'
+import path from 'path'
 
-const server = http.createServer((request, response) => {
+const __filename = url.fileURLToPath(import.meta.url)
+const __dirname  = path.dirname(__filename)
+
+const PORT = process.env.PORT
+
+const server = http.createServer(async (request, response) => {
     // response.setHeader('Content-Type', 'text/html')
     // response.write('<h1>Hello World</h1>')
     // response.end()
 
-    response.writeHead(500, {'Content-Type': 'application/json'})
-    response.end(JSON.stringify({
-        message: 'Some error bla'
-    }))
+    const filePath = path.join(__dirname, 'public', 'index.html')
+
+    console.log(filePath)
+    console.log(request.url)
+    console.log(request.method)
+    console.log(import.meta.url)
+    console.log(__filename)
+    console.log(__dirname)
+
+
+    const file = await fs.readFile(filePath)
+
+    response.writeHead(200, {'Content-Type': 'text/html'})
+    response.write(file)
+    response.end()
 })
 
-server.listen(3000, () => {
-    console.log('Server listening on port 3000')
+server.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`)
 })

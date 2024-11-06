@@ -1,11 +1,11 @@
 {
   "name": "nodejs-crash-2024",
   "version": "1.0.0",
-  "description": "### Bibliography",
+  "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon --env-file=.env server.js"
   },
   "author": "",
   "license": "ISC",
